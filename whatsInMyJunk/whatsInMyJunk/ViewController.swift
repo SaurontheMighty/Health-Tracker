@@ -1,15 +1,15 @@
 //
 //  ViewController.swift
-//  Health-Tracker
+//  whatsInMyJunk
 //
-//  Created by Joseph on 11/12/19.
-//  Copyright © 2019 liZARD. All rights reserved.
+//  Created by Zain Lakhani on 2019-12-11.
+//  Copyright © 2019 Zain Lakhani. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    let model = Whatsinmyjunk();
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
