@@ -30,5 +30,5 @@ struct JunkFood {
 let Smartfood_White_Cheddar_Popcorn = JunkFood("Smartfood White Cheddar Popcorn",100,6,5,15,9,2)
 let Doritos_Nacho_Cheese = JunkFood("Doritos Nacho Cheese",150,8,0,21,18,2)
 
-let junkDictionary:[String:JunkFood] = ["Doritos Nacho Cheese":Doritos_Nacho_Cheese],["Smartfood White Cheddar Popcorn":Smartfood_White_Cheddar_Popcorn]
+let junkDictionary:[String:JunkFood] = ["Doritos Nacho Cheese Flavoured Tortilla Chips":Doritos_Nacho_Cheese,"Smartfood White Cheddar Popcorn":Smartfood_White_Cheddar_Popcorn]
 
