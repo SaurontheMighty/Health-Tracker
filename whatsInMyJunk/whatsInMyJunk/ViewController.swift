@@ -41,12 +41,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         performSegue(withIdentifier: "cameraSegue", sender: self)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if(segue.identifier == "cameraSegue") {
-//            let whatYouAteClass = segue.destination as! WhatYouAteViewController
-//            whatYouAteClass.foodPic = tempImage
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "cameraSegue") {
+            let whatYouAteClass = segue.destination as! WhatYouAteViewController
+            whatYouAteClass.foodPic = tempImage
+        }
+    }
     
     func buffer(from image: UIImage) -> CVPixelBuffer? {
       let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue, kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary

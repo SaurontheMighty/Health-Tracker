@@ -9,8 +9,11 @@
 import UIKit
 
 class WhatYouAteViewController: UIViewController {
+    var foodPic:UIImage = UIImage(named: "logo")!
+    @IBOutlet weak var foodView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        foodView.image = foodPic
         // Do any additional setup after loading the view.
     }
     

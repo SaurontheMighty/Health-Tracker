@@ -154,6 +154,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pf3-8V-TBR"/>
                     </view>
+                    <connections>
+                        <outlet property="foodView" destination="H5C-Yz-gu7" id="Ae6-VD-8Az"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m3k-vT-Xuj" sceneMemberID="firstResponder"/>
             </objects>
