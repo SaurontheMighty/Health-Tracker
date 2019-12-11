@@ -9,7 +9,14 @@
 import UIKit
 
 class StatsViewController: UIViewController {
-
+    @IBOutlet weak var caloriesTotalLabel: UILabel!
+    @IBOutlet weak var cholesterolTotalLabel: UILabel!
+    
+    @IBOutlet weak var fatsTotalLabel: UILabel!
+    
+    @IBOutlet weak var proteinsTotalLabel: UILabel!
+    @IBOutlet weak var carbsTotalLabel: UILabel!
+    @IBOutlet weak var sodiumTotalLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
