@@ -47,8 +47,13 @@ let Nestea = JunkFood("Nestea",60,0,0,1.5,17,0)
 
 let Oasis_Orange_Juice = JunkFood("Oasis Orange Juice",80,0,0,2,21,0)
 
+let Chewy_Chocolate_Chip_Granola_Bar = JunkFood("Chewy Chocolate Chip Granola Bar",100,4,0,7,17,1)
+let Nutri_Grain_Mixed_Berry_Bar = JunkFood("Nutri Grain Mixed Berry Bar",140,4,0,95,26,2)
+let Nutri_Grain_Apple_Cinnamon = JunkFood("Nutri Grain Apple Cinnamon",140,4,0,95,26,2)
+let Nutri_Grain_Raspberry_Bar = JunkFood("Nutri Grain Raspberry Bar",140,4,0,95,26,2)
+let Nutri_Grain_Strawberry_Bar = JunkFood("Nutri Grain Strawberry Bar",140,4,0,11,25,2)
 
-let junkDictionary:[String:JunkFood] = ["Doritos Nacho Cheese":Doritos_Nacho_Cheese,"Smartfood White Cheddar Popcorn":Smartfood_White_Cheddar_Popcorn, "Ketchup Chips":Ketchup_Chips, "Ruffles BBQ":Ruffles_BBQ, "Cheetos Crunchy":Cheetos_Crunchy, "Classic":Classic, "Cheeto Puffs":Cheeto_Puffs, "Ruffles All Dressed":Ruffles_All_Dressed, "Coca Cola":Coca_Cola, "Ginger Ale":Ginger_Ale, "Pepsi":Pepsi, "Crush Grape":Crush_Grape, "Crush Orange":Crush_Orange, "Mountain Dew":Mountain_Dew, "Nestea":Nestea, "Oasis Orange Juice":Oasis_Orange_Juice]
+let junkDictionary:[String:JunkFood] = ["Doritos Nacho Cheese":Doritos_Nacho_Cheese,"Smartfood White Cheddar Popcorn":Smartfood_White_Cheddar_Popcorn, "Ketchup Chips":Ketchup_Chips, "Ruffles BBQ":Ruffles_BBQ, "Cheetos Crunchy":Cheetos_Crunchy, "Classic":Classic, "Cheeto Puffs":Cheeto_Puffs, "Ruffles All Dressed":Ruffles_All_Dressed, "Coca Cola":Coca_Cola, "Ginger Ale":Ginger_Ale, "Pepsi":Pepsi, "Crush Grape":Crush_Grape, "Crush Orange":Crush_Orange, "Mountain Dew":Mountain_Dew, "Nestea":Nestea, "Oasis Orange Juice":Oasis_Orange_Juice, "Chewy Chocolate Chip Granola Bar":Chewy_Chocolate_Chip_Granola_Bar,"Nutri Grain Mixed Berry Bar":Nutri_Grain_Mixed_Berry_Bar,"Nutri Grain Apple Cinnamon":Nutri_Grain_Apple_Cinnamon,"Nutri Grain Raspberry Bar":Nutri_Grain_Raspberry_Bar,"Nutri Grain Strawberry Bar":Nutri_Grain_Strawberry_Bar]
 
 
 
