@@ -180,6 +180,10 @@
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Calories:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-af-ivz">
                                 <rect key="frame" x="16" y="422" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="Xa4-mQ-JQO"/>
+                                    <constraint firstAttribute="height" constant="30" id="uLh-e5-Ugk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -203,11 +207,15 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fat:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l1H-8y-E24">
                                 <rect key="frame" x="189" y="422" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7yA-Vf-Gys"/>
+                                    <constraint firstAttribute="width" constant="45" id="g1c-2g-dLl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Proteins:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QZH-dc-UKQ">
-                                <rect key="frame" x="34" y="635" width="79" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Proteins:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QZH-dc-UKQ">
+                                <rect key="frame" x="16" y="636" width="79" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="79" id="aw0-1o-sfX"/>
                                     <constraint firstAttribute="height" constant="30" id="ucP-DW-kQP"/>
