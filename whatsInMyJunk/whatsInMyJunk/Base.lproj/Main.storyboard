@@ -178,7 +178,7 @@
                                     <constraint firstAttribute="height" constant="269" id="iXd-La-VEG"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Calories:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-af-ivz">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Calories:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-af-ivz" propertyAccessControl="all">
                                 <rect key="frame" x="16" y="422" width="78" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="78" id="Xa4-mQ-JQO"/>
