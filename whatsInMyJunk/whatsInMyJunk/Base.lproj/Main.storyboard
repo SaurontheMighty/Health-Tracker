@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -66,14 +63,14 @@
             <objects>
                 <viewController title="Today's Stats" id="gQ4-ih-EIG" customClass="StatsViewController" customModule="whatsInMyJunk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dWO-qM-9PL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nKl-XX-sOS">
                                 <rect key="frame" x="67" y="127" width="240" height="128"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Today's Stata" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q5E-p2-lWd">
-                                <rect key="frame" x="137" y="53" width="101" height="30"/>
+                                <rect key="frame" x="137" y="9" width="101" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="Today's Stata"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KHQ-pb-hzB"/>
@@ -111,38 +108,59 @@
             <objects>
                 <viewController id="y3g-gS-rYc" customClass="WhatYouAteViewController" customModule="whatsInMyJunk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ya0-tI-n2o">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-Yz-gu7">
-                                <rect key="frame" x="0.0" y="44" width="375" height="269"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-Yz-gu7">
+                                <rect key="frame" x="0.0" y="31" width="375" height="269"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="LiH-2n-zLc"/>
+                                    <constraint firstAttribute="height" constant="269" id="eW6-Pv-jMP"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgj-qU-M3e">
-                                <rect key="frame" x="146" y="704" width="98" height="30"/>
-                                <state key="normal" title="Add Food"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTP-at-bKF">
-                                <rect key="frame" x="202" y="510" width="33" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What You Ate" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3x-xJ-xGU">
+                                <rect key="frame" x="16" y="323" width="160.33333333333334" height="29"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What You Ate" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3x-xJ-xGU">
-                                <rect key="frame" x="27" y="336" width="160.33333333333334" height="29"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgj-qU-M3e">
+                                <rect key="frame" x="154.66666666666666" y="685" width="66" height="30"/>
+                                <state key="normal" title="Add Food"/>
+                                <connections>
+                                    <action selector="dismissPressed:" destination="y3g-gS-rYc" eventType="touchUpInside" id="Ug6-DB-bsf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jye-lO-5il">
+                                <rect key="frame" x="16" y="369" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLJ-9S-EvC">
+                                <rect key="frame" x="16" y="509" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8k-Vt-3Pi">
+                                <rect key="frame" x="54" y="439" width="29" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pf3-8V-TBR" firstAttribute="trailing" secondItem="u3x-xJ-xGU" secondAttribute="trailing" constant="188.66999999999999" id="8ss-AB-52L"/>
-                            <constraint firstItem="lgj-qU-M3e" firstAttribute="leading" secondItem="pf3-8V-TBR" secondAttribute="leading" constant="146" id="KkG-hS-pgD"/>
-                            <constraint firstItem="pf3-8V-TBR" firstAttribute="bottom" secondItem="lgj-qU-M3e" secondAttribute="bottom" constant="44" id="aFq-w9-fsJ"/>
-                            <constraint firstItem="pf3-8V-TBR" firstAttribute="trailing" secondItem="lgj-qU-M3e" secondAttribute="trailing" constant="131" id="eLI-Rr-ouK"/>
-                            <constraint firstItem="u3x-xJ-xGU" firstAttribute="leading" secondItem="pf3-8V-TBR" secondAttribute="leading" constant="26" id="ows-SP-N3W"/>
-                            <constraint firstItem="u3x-xJ-xGU" firstAttribute="top" secondItem="H5C-Yz-gu7" secondAttribute="bottom" constant="25.329999999999998" id="u2X-zZ-di6"/>
+                            <constraint firstItem="u3x-xJ-xGU" firstAttribute="leading" secondItem="pf3-8V-TBR" secondAttribute="leading" constant="16" id="5Vc-Tw-MNu"/>
+                            <constraint firstItem="pf3-8V-TBR" firstAttribute="bottom" secondItem="lgj-qU-M3e" secondAttribute="bottom" constant="9" id="DgZ-mI-TdF"/>
+                            <constraint firstItem="H5C-Yz-gu7" firstAttribute="centerX" secondItem="ya0-tI-n2o" secondAttribute="centerX" id="W6k-vf-0wM"/>
+                            <constraint firstItem="H5C-Yz-gu7" firstAttribute="top" secondItem="pf3-8V-TBR" secondAttribute="top" constant="31" id="XXK-fa-ezR"/>
+                            <constraint firstItem="u3x-xJ-xGU" firstAttribute="top" secondItem="H5C-Yz-gu7" secondAttribute="bottom" constant="23" id="aV4-xD-bSr"/>
+                            <constraint firstItem="lgj-qU-M3e" firstAttribute="centerX" secondItem="ya0-tI-n2o" secondAttribute="centerX" id="sfT-Hp-73X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pf3-8V-TBR"/>
                     </view>
