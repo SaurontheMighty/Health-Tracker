@@ -19,11 +19,17 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var sodiumTotalLabel: UILabel!
     
     
+    @IBOutlet weak var caloriesDaily: UIImageView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(caloriesTotal > 2500) {
+            caloriesDaily.isHidden = false;
+        } else {
+            caloriesDaily.isHidden = true;
+        }
         caloriesTotalLabel.text = String(caloriesTotal) + " cal"
         cholesterolTotalLabel.text = String(cholesterolTotal*10) + " mg"
         fatsTotalLabel.text = String(fatTotal) + " g"

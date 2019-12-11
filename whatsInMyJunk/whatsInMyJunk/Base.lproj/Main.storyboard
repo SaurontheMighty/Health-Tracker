@@ -214,6 +214,7 @@
                         <viewLayoutGuide key="safeArea" id="dYi-lo-5Pg"/>
                     </view>
                     <connections>
+                        <outlet property="caloriesDaily" destination="RKM-4q-K21" id="aUR-Do-oHb"/>
                         <outlet property="caloriesTotalLabel" destination="sc2-48-fKk" id="ROA-kT-a9A"/>
                         <outlet property="carbsTotalLabel" destination="2zJ-wt-EOQ" id="OXO-Qe-NRu"/>
                         <outlet property="cholesterolTotalLabel" destination="2Eb-As-isk" id="bq1-Yj-vxA"/>
