@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     let model = Whatsinmyjunk();
+    var tempImage:UIImage
     @IBOutlet weak var foodThing: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         print(WhatsinmyJunkOutput!.classLabelProbs)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        var tempImage:UIImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        tempImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         picker.dismiss(animated: true)
         performSegue(withIdentifier: "cameraSegue", sender: self)
 
@@ -39,6 +40,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         // print out the image size as a test
         print(image.size)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "cameraSegue") {
+            let whatYouAteClass = segue.destination as! WhatYouAteViewController
+            whatYouAteClass.foodPic = tempImage
+        }
+    }
+    
     func buffer(from image: UIImage) -> CVPixelBuffer? {
       let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue, kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
       var pixelBuffer : CVPixelBuffer?
