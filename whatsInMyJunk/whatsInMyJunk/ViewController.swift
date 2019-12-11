@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     let model = Whatsinmyjunk();
+    var foodThing:String = ""
     var tempImage:UIImage = UIImage(named:"logo")!
-    @IBOutlet weak var foodThing: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -35,7 +35,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             return
         }
         let WhatsinmyJunkOutput = try? model.prediction(image: buffer(from: tempImage)!)
-        foodThing.text = WhatsinmyJunkOutput!.classLabel
+        foodThing = (WhatsinmyJunkOutput?.classLabel)!
         // print out the image size as a test
         print(image.size)
         performSegue(withIdentifier: "cameraSegue", sender: self)
@@ -45,7 +45,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         if(segue.identifier == "cameraSegue") {
             let whatYouAteClass = segue.destination as! WhatYouAteViewController
             whatYouAteClass.foodPic = tempImage
-            whatYouAteClass.foodText = foodThing.text!
+            whatYouAteClass.foodText = foodThing
         }
     }
     
@@ -54,6 +54,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
       var pixelBuffer : CVPixelBuffer?
       let status = CVPixelBufferCreate(kCFAllocatorDefault, Int(image.size.width), Int(image.size.height), kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
       guard (status == kCVReturnSuccess) else {
+        print("Im returning nil here\n")
         return nil
       }
 
