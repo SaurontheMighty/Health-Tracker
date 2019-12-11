@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,14 +66,14 @@
             <objects>
                 <viewController title="Today's Stats" id="gQ4-ih-EIG" customClass="StatsViewController" customModule="whatsInMyJunk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dWO-qM-9PL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nKl-XX-sOS">
                                 <rect key="frame" x="67" y="127" width="240" height="128"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Today's Stata" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q5E-p2-lWd">
-                                <rect key="frame" x="137" y="9" width="101" height="30"/>
+                                <rect key="frame" x="137" y="53" width="101" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="Today's Stata"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KHQ-pb-hzB"/>
@@ -79,34 +82,34 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Calories:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="235-Ed-mMz">
-                                <rect key="frame" x="139" y="300" width="97" height="34"/>
+                                <rect key="frame" x="139" y="300" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sodium:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EyV-ro-h2H">
-                                <rect key="frame" x="139" y="468" width="97" height="34"/>
+                                <rect key="frame" x="139" y="460" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Carbohydrates:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="siD-31-Hsc">
-                                <rect key="frame" x="122.66666666666669" y="548" width="128" height="34"/>
+                                <rect key="frame" x="126" y="536" width="121" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Proteins:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3BW-89-cvj">
-                                <rect key="frame" x="137" y="632" width="99" height="34"/>
+                                <rect key="frame" x="137" y="616" width="99" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxH-zo-lqP">
-                                <rect key="frame" x="159.66666666666666" y="712" width="54" height="30"/>
+                                <rect key="frame" x="159.66666666666666" y="692" width="54" height="30"/>
                                 <state key="normal" title="Dismiss"/>
                                 <connections>
                                     <action selector="dismissPressed:" destination="gQ4-ih-EIG" eventType="touchUpInside" id="KrL-2D-IJK"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fat:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g15-cG-raS">
-                                <rect key="frame" x="139" y="384" width="97" height="34"/>
+                                <rect key="frame" x="139" y="380" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -149,61 +152,44 @@
             <objects>
                 <viewController id="y3g-gS-rYc" customClass="WhatYouAteViewController" customModule="whatsInMyJunk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ya0-tI-n2o">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="Qk5-IV-p8Y">
-                                <rect key="frame" x="62.666666666666657" y="54" width="249.99999999999997" height="650"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-uI-Urv">
-                                        <rect key="frame" x="25" y="0.0" width="200" height="200"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="Ejh-KS-CSN"/>
-                                            <constraint firstAttribute="height" constant="190.66999999999999" id="q9T-qT-Mcn"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-Yz-gu7">
-                                        <rect key="frame" x="0.0" y="290" width="250" height="124"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="hXI-vc-Tgi"/>
-                                            <constraint firstAttribute="height" constant="200" id="zZc-ZD-sTH"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What You Ate" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbg-uM-Cyz">
-                                        <rect key="frame" x="60.333333333333343" y="504.00000000000006" width="129" height="25.666666666666686"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25.670000000000002" id="OdS-it-Vb1"/>
-                                            <constraint firstAttribute="width" constant="128.66999999999999" id="RND-8p-je9"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sN-nY-qT8">
-                                        <rect key="frame" x="98" y="619.66666666666663" width="54" height="30.333333333333371"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="54" id="Imj-uM-59m"/>
-                                            <constraint firstAttribute="height" constant="30.329999999999998" id="uHL-Cz-3vy"/>
-                                        </constraints>
-                                        <state key="normal" title="Dismiss"/>
-                                        <connections>
-                                            <action selector="dismissPressed:" destination="y3g-gS-rYc" eventType="touchUpInside" id="3cT-Zm-fJJ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="6sN-nY-qT8" firstAttribute="centerX" secondItem="Qk5-IV-p8Y" secondAttribute="centerX" id="cPw-c5-AiS"/>
-                                    <constraint firstItem="Cbg-uM-Cyz" firstAttribute="centerX" secondItem="Qk5-IV-p8Y" secondAttribute="centerX" id="euT-Tg-JQA"/>
-                                    <constraint firstItem="H5C-Yz-gu7" firstAttribute="centerX" secondItem="Qk5-IV-p8Y" secondAttribute="centerX" id="g6m-EW-hob"/>
-                                    <constraint firstAttribute="height" constant="650" id="lPC-AZ-xJF"/>
-                                    <constraint firstItem="ha5-uI-Urv" firstAttribute="centerX" secondItem="Qk5-IV-p8Y" secondAttribute="centerX" id="zKl-x7-5Fa"/>
-                                </constraints>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-uI-Urv">
+                                <rect key="frame" x="87" y="44" width="200" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What You Ate" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbg-uM-Cyz">
+                                <rect key="frame" x="123" y="476.33333333333331" width="129" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sN-nY-qT8">
+                                <rect key="frame" x="160" y="723" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismissPressed:" destination="y3g-gS-rYc" eventType="touchUpInside" id="3cT-Zm-fJJ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-Yz-gu7">
+                                <rect key="frame" x="62" y="265" width="250" height="128.33333333333337"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Qk5-IV-p8Y" firstAttribute="centerX" secondItem="ya0-tI-n2o" secondAttribute="centerX" id="IdQ-MV-nd0"/>
-                            <constraint firstItem="Qk5-IV-p8Y" firstAttribute="centerY" secondItem="ya0-tI-n2o" secondAttribute="centerY" id="tLY-d7-6BU"/>
+                            <constraint firstItem="ha5-uI-Urv" firstAttribute="leading" secondItem="pf3-8V-TBR" secondAttribute="leading" constant="87" id="4ul-ZH-C3O"/>
+                            <constraint firstItem="pf3-8V-TBR" firstAttribute="trailing" secondItem="ha5-uI-Urv" secondAttribute="trailing" constant="88" id="5SN-3h-b30"/>
+                            <constraint firstItem="Cbg-uM-Cyz" firstAttribute="leading" secondItem="pf3-8V-TBR" secondAttribute="leading" constant="123" id="EoZ-mh-bU5"/>
+                            <constraint firstItem="H5C-Yz-gu7" firstAttribute="leading" secondItem="pf3-8V-TBR" secondAttribute="leading" constant="62" id="Eop-UP-z6Q"/>
+                            <constraint firstItem="pf3-8V-TBR" firstAttribute="trailing" secondItem="H5C-Yz-gu7" secondAttribute="trailing" constant="63" id="Fun-BQ-WTM"/>
+                            <constraint firstItem="ha5-uI-Urv" firstAttribute="top" secondItem="pf3-8V-TBR" secondAttribute="top" id="LzE-IE-V2i"/>
+                            <constraint firstItem="H5C-Yz-gu7" firstAttribute="top" secondItem="ha5-uI-Urv" secondAttribute="bottom" constant="21" id="SiN-lZ-Nvi"/>
+                            <constraint firstItem="pf3-8V-TBR" firstAttribute="trailing" secondItem="Cbg-uM-Cyz" secondAttribute="trailing" constant="123" id="Y6s-WW-hRH"/>
+                            <constraint firstItem="pf3-8V-TBR" firstAttribute="trailing" secondItem="6sN-nY-qT8" secondAttribute="trailing" constant="161" id="baU-az-erg"/>
+                            <constraint firstItem="Cbg-uM-Cyz" firstAttribute="top" secondItem="H5C-Yz-gu7" secondAttribute="bottom" constant="83" id="jgn-et-TnB"/>
+                            <constraint firstItem="pf3-8V-TBR" firstAttribute="bottom" secondItem="6sN-nY-qT8" secondAttribute="bottom" constant="25" id="mDD-Wu-0qs"/>
+                            <constraint firstItem="6sN-nY-qT8" firstAttribute="top" secondItem="Cbg-uM-Cyz" secondAttribute="bottom" constant="220.33000000000001" id="nO1-D9-jo2"/>
+                            <constraint firstItem="6sN-nY-qT8" firstAttribute="leading" secondItem="pf3-8V-TBR" secondAttribute="leading" constant="160" id="q0n-r2-E1L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pf3-8V-TBR"/>
                     </view>
