@@ -20,21 +20,51 @@ class StatsViewController: UIViewController {
     
     
     @IBOutlet weak var caloriesDaily: UIImageView!
+    @IBOutlet weak var CholesterolDaily: UIImageView!
+    @IBOutlet weak var FatsDaily: UIImageView!
     
+    @IBOutlet weak var SodiumDaily: UIImageView!
+    @IBOutlet weak var CarbsDaily: UIImageView!
+    @IBOutlet weak var ProteinsDaily: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if(caloriesTotal > 2500) {
+        if(caloriesTotal > 2000) {
             caloriesDaily.isHidden = false;
         } else {
             caloriesDaily.isHidden = true;
         }
         caloriesTotalLabel.text = String(caloriesTotal) + " cal"
+        if(cholesterolTotal > 300) {
+            CholesterolDaily.isHidden = false;
+        } else {
+            CholesterolDaily.isHidden = true;
+        }
         cholesterolTotalLabel.text = String(cholesterolTotal*10) + " mg"
+        if(fatTotal > 78) {
+            FatsDaily.isHidden = false;
+        } else {
+            FatsDaily.isHidden = true;
+        }
         fatsTotalLabel.text = String(fatTotal) + " g"
+        if(sodiumTotal > 2300) {
+            SodiumDaily.isHidden = false;
+        } else {
+            SodiumDaily.isHidden = true;
+        }
         sodiumTotalLabel.text = String(sodiumTotal*10) + " mg"
+        if(carbsTotal > 275) {
+            CarbsDaily.isHidden = false;
+        } else {
+            CarbsDaily.isHidden = true;
+        }
         carbsTotalLabel.text = String(carbsTotal) + " g"
+        if(proteinsTotal > 50) {
+            ProteinsDaily.isHidden = false;
+        } else {
+            ProteinsDaily.isHidden = true;
+        }
         proteinsTotalLabel.text = String(proteinTotal) + " g"
         // Do any additional setup after loading the view.
     }
