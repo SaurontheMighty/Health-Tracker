@@ -142,6 +142,9 @@
                                 <rect key="frame" x="160" y="614" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismissPressed:" destination="y3g-gS-rYc" eventType="touchUpInside" id="3cT-Zm-fJJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What You Ate" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbg-uM-Cyz">
                                 <rect key="frame" x="123" y="479" width="129" height="27"/>
@@ -155,6 +158,7 @@
                         <viewLayoutGuide key="safeArea" id="pf3-8V-TBR"/>
                     </view>
                     <connections>
+                        <outlet property="foodLabel" destination="Cbg-uM-Cyz" id="xfl-wN-2ts"/>
                         <outlet property="foodView" destination="H5C-Yz-gu7" id="Ae6-VD-8Az"/>
                     </connections>
                 </viewController>

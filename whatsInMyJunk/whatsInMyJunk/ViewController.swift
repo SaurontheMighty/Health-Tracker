@@ -45,6 +45,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         if(segue.identifier == "cameraSegue") {
             let whatYouAteClass = segue.destination as! WhatYouAteViewController
             whatYouAteClass.foodPic = tempImage
+            whatYouAteClass.foodText = foodThing.text!
         }
     }
     

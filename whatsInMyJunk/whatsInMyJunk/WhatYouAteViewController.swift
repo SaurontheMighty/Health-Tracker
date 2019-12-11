@@ -10,14 +10,21 @@ import UIKit
 
 class WhatYouAteViewController: UIViewController {
     var foodPic:UIImage = UIImage(named: "logo")!
+    var foodText: String = ""
     @IBOutlet weak var foodView: UIImageView!
+    @IBOutlet weak var foodLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         foodView.image = foodPic
+        foodLabel.text = foodText
+        
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func dismissPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
