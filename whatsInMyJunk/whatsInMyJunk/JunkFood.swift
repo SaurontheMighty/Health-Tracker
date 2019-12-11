@@ -27,5 +27,5 @@ struct JunkFood {
     }
 }
 
-//Smartfood_White_Cheddar_Popcorn = 
+Smartfood_White_Cheddar_Popcorn = JunkFood("Smartfood White Cheddar Popcorn",100,6)
 
