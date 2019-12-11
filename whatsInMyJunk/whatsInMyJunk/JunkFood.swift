@@ -39,5 +39,5 @@ let Coca_Cola = JunkFood("Coca Cola",140,0,0,2.5,39,39)
 let Ginger_Ale = JunkFood("Ginger Ale",130,0,0,5,32,0)
 
 
-let junkDictionary:[String:JunkFood] = ["Doritos Nacho Cheese":Doritos_Nacho_Cheese,"Smartfood White Cheddar Popcorn":Smartfood_White_Cheddar_Popcorn, "Ketchup Chips":Ketchup_Chips]
+let junkDictionary:[String:JunkFood] = ["Doritos Nacho Cheese":Doritos_Nacho_Cheese,"Smartfood White Cheddar Popcorn":Smartfood_White_Cheddar_Popcorn, "Ketchup Chips":Ketchup_Chips, "Ruffles BBQ":Ruffles_BBQ, "Cheetos Crunchy":Cheetos_Crunchy, "Classic":Classic, "Cheeto Puffs":Cheeto_Puffs, "Ruffles All Dressed":Ruffles_All_Dressed, "Coca Cola":Coca_Cola, "Ginger Ale":Ginger_Ale]
 
