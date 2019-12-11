@@ -14,6 +14,7 @@
 		34B6E3BC23A13EA90091301F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B6E3BB23A13EA90091301F /* Assets.xcassets */; };
 		34B6E3BF23A13EA90091301F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B6E3BD23A13EA90091301F /* LaunchScreen.storyboard */; };
 		34B6E3C723A1402C0091301F /* Whatsinmyjunk.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 34B6E3C623A1402C0091301F /* Whatsinmyjunk.mlmodel */; };
+		D80DC8A123A154F20099F0AB /* WhatYouAteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DC8A023A154F20099F0AB /* WhatYouAteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		34B6E3BE23A13EA90091301F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34B6E3C023A13EA90091301F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34B6E3C623A1402C0091301F /* Whatsinmyjunk.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Whatsinmyjunk.mlmodel; path = ../../../../../../Desktop/Whatsinmyjunk.mlmodel; sourceTree = "<group>"; };
+		D80DC8A023A154F20099F0AB /* WhatYouAteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatYouAteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				34B6E3BB23A13EA90091301F /* Assets.xcassets */,
 				34B6E3BD23A13EA90091301F /* LaunchScreen.storyboard */,
 				34B6E3C023A13EA90091301F /* Info.plist */,
+				D80DC8A023A154F20099F0AB /* WhatYouAteViewController.swift */,
 			);
 			path = whatsInMyJunk;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				34B6E3B723A13EA70091301F /* ViewController.swift in Sources */,
 				34B6E3C723A1402C0091301F /* Whatsinmyjunk.mlmodel in Sources */,
+				D80DC8A123A154F20099F0AB /* WhatYouAteViewController.swift in Sources */,
 				34B6E3B323A13EA70091301F /* AppDelegate.swift in Sources */,
 				34B6E3B523A13EA70091301F /* SceneDelegate.swift in Sources */,
 			);
