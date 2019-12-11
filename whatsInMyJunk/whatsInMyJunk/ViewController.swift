@@ -35,7 +35,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             return
         }
         let WhatsinmyJunkOutput = try? model.prediction(image: buffer(from: tempImage)!)
-//        foodThing.text = WhatsinmyJunkOutput!.classLabel
+        foodThing.text = WhatsinmyJunkOutput!.classLabel
         // print out the image size as a test
         print(image.size)
         performSegue(withIdentifier: "cameraSegue", sender: self)

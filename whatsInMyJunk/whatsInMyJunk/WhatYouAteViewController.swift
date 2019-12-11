@@ -9,10 +9,8 @@
 import UIKit
 
 class WhatYouAteViewController: UIViewController {
-    var foodPic: UIImage;
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     
