@@ -16,6 +16,8 @@
 		34B6E3BC23A13EA90091301F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B6E3BB23A13EA90091301F /* Assets.xcassets */; };
 		34B6E3BF23A13EA90091301F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B6E3BD23A13EA90091301F /* LaunchScreen.storyboard */; };
 		34B6E3CB23A15A0D0091301F /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6E3CA23A15A0D0091301F /* StatsViewController.swift */; };
+		34FA835F23A191E600C66E47 /* database.py in Resources */ = {isa = PBXBuildFile; fileRef = 34FA835E23A191E600C66E47 /* database.py */; };
+		34FA836123A1920F00C66E47 /* item.txt in Resources */ = {isa = PBXBuildFile; fileRef = 34FA836023A1920F00C66E47 /* item.txt */; };
 		D80DC8A123A154F20099F0AB /* WhatYouAteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DC8A023A154F20099F0AB /* WhatYouAteViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		34B6E3BE23A13EA90091301F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34B6E3C023A13EA90091301F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34B6E3CA23A15A0D0091301F /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		34FA835E23A191E600C66E47 /* database.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = database.py; path = ../../../../../../Desktop/database.py; sourceTree = "<group>"; };
+		34FA836023A1920F00C66E47 /* item.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = item.txt; sourceTree = "<group>"; };
 		D80DC8A023A154F20099F0AB /* WhatYouAteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatYouAteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,8 @@
 				34B6E3B623A13EA70091301F /* ViewController.swift */,
 				34B6E3B823A13EA70091301F /* Main.storyboard */,
 				348BB49723A17FED004290D3 /* Whatsinmyjunk.mlmodel */,
+				34FA835E23A191E600C66E47 /* database.py */,
+				34FA836023A1920F00C66E47 /* item.txt */,
 				34357FCC23A16BC900A6A6D9 /* JunkFood.swift */,
 				34B6E3CA23A15A0D0091301F /* StatsViewController.swift */,
 				34B6E3BB23A13EA90091301F /* Assets.xcassets */,
@@ -140,6 +146,8 @@
 				34B6E3BF23A13EA90091301F /* LaunchScreen.storyboard in Resources */,
 				34B6E3BC23A13EA90091301F /* Assets.xcassets in Resources */,
 				34B6E3BA23A13EA70091301F /* Main.storyboard in Resources */,
+				34FA835F23A191E600C66E47 /* database.py in Resources */,
+				34FA836123A1920F00C66E47 /* item.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

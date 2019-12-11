@@ -38,7 +38,26 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         let WhatsinmyJunkOutput = try? model.prediction(image: buffer(from: tempImage)!)
         foodThing = (WhatsinmyJunkOutput?.classLabel)!
         foodInfoStruct = junkDictionary[foodThing]!
-//        print(junkDictionary[foodThing]!.calories)
+        let file = "item.txt"
+        let text = foodThing
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+
+            let fileURL = dir.appendingPathComponent(file)
+
+            //writing
+            do {
+                try text.write(to: fileURL, atomically: false, encoding: .utf8)
+            }
+            catch {/* error handling here */}
+
+            //reading
+            do {
+                let text2 = try String(contentsOf: fileURL, encoding: .utf8)
+                print(text2)
+            }
+            catch {/* error handling here */}
+        }
+        //        print(junkDictionary[foodThing]!.calories)
         // print out the image size as a test
         print(image.size)
         performSegue(withIdentifier: "cameraSegue", sender: self)
