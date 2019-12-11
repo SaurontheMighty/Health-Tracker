@@ -35,7 +35,7 @@ let Cheetos_Crunchy = JunkFood("Cheetos Crunchy",160,10,0,25,16,1)
 let Classic = JunkFood("Classic",160,10,0,17,15,2)
 let Cheeto_Puffs = JunkFood("Cheeto Puffs",160,10,0,24,15,2)
 let Ruffles_All_Dressed = JunkFood("Ruffles All Dressed",150,9,0,17,16,2)
-let Coca_Cola = JunkFood("Coca Cola",140,0,0,2.5,39,39)
+let Coca_Cola = JunkFood("Coca Cola",140,0,0,2.5,39,0)
 let Ginger_Ale = JunkFood("Ginger Ale",130,0,0,5,32,0)
 
 
