@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     let model = Whatsinmyjunk();
     var foodThing:String = ""
+    var foodInfoStruct: JunkFood = Doritos_Nacho_Cheese
     var tempImage:UIImage = UIImage(named:"logo")!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +37,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         let WhatsinmyJunkOutput = try? model.prediction(image: buffer(from: tempImage)!)
         foodThing = (WhatsinmyJunkOutput?.classLabel)!
-//        print(foodThing)
+        foodInfoStruct = junkDictionary[foodThing]!
 //        print(junkDictionary[foodThing]!.calories)
         // print out the image size as a test
         print(image.size)
@@ -48,6 +49,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             let whatYouAteClass = segue.destination as! WhatYouAteViewController
             whatYouAteClass.foodPic = tempImage
             whatYouAteClass.foodText = foodThing
+            whatYouAteClass.foodInfo = foodInfoStruct
         }
     }
     

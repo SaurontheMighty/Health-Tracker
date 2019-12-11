@@ -11,13 +11,27 @@ import UIKit
 class WhatYouAteViewController: UIViewController {
     var foodPic:UIImage = UIImage(named: "logo")!
     var foodText: String = ""
+    var foodInfo: JunkFood = Doritos_Nacho_Cheese
+    
+    
+    @IBOutlet weak var cholesterolLabel: UILabel!
+    @IBOutlet weak var proteinLabel: UILabel!
+    @IBOutlet weak var carbsLabel: UILabel!
+    @IBOutlet weak var sodiumLabel: UILabel!
+    @IBOutlet weak var fatLabel: UILabel!
+    @IBOutlet weak var caloriesLabel: UILabel!
     @IBOutlet weak var foodView: UIImageView!
     @IBOutlet weak var foodLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         foodView.image = foodPic
         foodLabel.text = foodText
-        
+        caloriesLabel.text = String(foodInfo.calories) + " cal"
+        fatLabel.text = String(foodInfo.fat) + " g"
+        sodiumLabel.text = String(foodInfo.sodium*10) + " mg"
+        carbsLabel.text = String(foodInfo.carbs) + " g"
+        proteinLabel.text = String(foodInfo.protein) + " g"
+        cholesterolLabel.text = String(foodInfo.cholesterol*10) + " mg"
         // Do any additional setup after loading the view.
     }
     
