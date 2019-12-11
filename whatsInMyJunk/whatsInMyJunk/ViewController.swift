@@ -28,6 +28,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         var tempImage:UIImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         picker.dismiss(animated: true)
+        performSegue(withIdentifier: "cameraSegue", sender: self)
 
         guard let image = info[.editedImage] as? UIImage else {
             print("No image found")
