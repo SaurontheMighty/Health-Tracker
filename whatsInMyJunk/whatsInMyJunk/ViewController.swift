@@ -62,5 +62,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
       return pixelBuffer
     }
+    
+    
+    @IBAction func statsPressed(_ sender: Any) {
+        performSegue(withIdentifier: "statsSegue" ,sender: self)
+    }
+    
 }
 
