@@ -37,6 +37,12 @@ class WhatYouAteViewController: UIViewController {
     
     @IBAction func dismissPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        caloriesTotal += foodInfo.calories
+        fatTotal += foodInfo.fat
+        sodiumTotal += foodInfo.sodium
+        carbsTotal += foodInfo.carbs
+        proteinTotal += foodInfo.protein
+        cholesterolTotal += foodInfo.cholesterol
     }
     
     /*

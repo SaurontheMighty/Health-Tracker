@@ -19,7 +19,12 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var sodiumTotalLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        caloriesTotalLabel.text = String(caloriesTotal) + " cal"
+        cholesterolTotalLabel.text = String(cholesterolTotal*10) + " mg"
+        fatsTotalLabel.text = String(fatTotal) + " g"
+        sodiumTotalLabel.text = String(sodiumTotal*10) + " mg"
+        carbsTotalLabel.text = String(carbsTotal) + " g"
+        proteinsTotalLabel.text = String(proteinTotal) + " g"
         // Do any additional setup after loading the view.
     }
     
