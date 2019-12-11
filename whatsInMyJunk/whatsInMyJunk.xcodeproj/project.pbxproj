@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34357FCD23A16BC900A6A6D9 /* JunkFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34357FCC23A16BC900A6A6D9 /* JunkFood.swift */; };
 		34B6E3B323A13EA70091301F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6E3B223A13EA70091301F /* AppDelegate.swift */; };
 		34B6E3B523A13EA70091301F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6E3B423A13EA70091301F /* SceneDelegate.swift */; };
 		34B6E3B723A13EA70091301F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6E3B623A13EA70091301F /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34357FCC23A16BC900A6A6D9 /* JunkFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunkFood.swift; sourceTree = "<group>"; };
 		34B6E3AF23A13EA70091301F /* whatsInMyJunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsInMyJunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B6E3B223A13EA70091301F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34B6E3B423A13EA70091301F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				34B6E3B623A13EA70091301F /* ViewController.swift */,
 				34B6E3C623A1402C0091301F /* Whatsinmyjunk.mlmodel */,
 				34B6E3B823A13EA70091301F /* Main.storyboard */,
+				34357FCC23A16BC900A6A6D9 /* JunkFood.swift */,
 				34B6E3CA23A15A0D0091301F /* StatsViewController.swift */,
 				34B6E3BB23A13EA90091301F /* Assets.xcassets */,
 				34B6E3BD23A13EA90091301F /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 				34B6E3B323A13EA70091301F /* AppDelegate.swift in Sources */,
 				34B6E3CB23A15A0D0091301F /* StatsViewController.swift in Sources */,
 				34B6E3B523A13EA70091301F /* SceneDelegate.swift in Sources */,
+				34357FCD23A16BC900A6A6D9 /* JunkFood.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
