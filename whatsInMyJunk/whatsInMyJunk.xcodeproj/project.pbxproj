@@ -14,6 +14,7 @@
 		34B6E3BC23A13EA90091301F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B6E3BB23A13EA90091301F /* Assets.xcassets */; };
 		34B6E3BF23A13EA90091301F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B6E3BD23A13EA90091301F /* LaunchScreen.storyboard */; };
 		34B6E3C723A1402C0091301F /* Whatsinmyjunk.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 34B6E3C623A1402C0091301F /* Whatsinmyjunk.mlmodel */; };
+		34B6E3CB23A15A0D0091301F /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6E3CA23A15A0D0091301F /* StatsViewController.swift */; };
 		D80DC8A123A154F20099F0AB /* WhatYouAteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DC8A023A154F20099F0AB /* WhatYouAteViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		34B6E3BE23A13EA90091301F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34B6E3C023A13EA90091301F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34B6E3C623A1402C0091301F /* Whatsinmyjunk.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Whatsinmyjunk.mlmodel; path = ../../../../../../Desktop/Whatsinmyjunk.mlmodel; sourceTree = "<group>"; };
+		34B6E3CA23A15A0D0091301F /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		D80DC8A023A154F20099F0AB /* WhatYouAteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatYouAteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				34B6E3B623A13EA70091301F /* ViewController.swift */,
 				34B6E3C623A1402C0091301F /* Whatsinmyjunk.mlmodel */,
 				34B6E3B823A13EA70091301F /* Main.storyboard */,
+				34B6E3CA23A15A0D0091301F /* StatsViewController.swift */,
 				34B6E3BB23A13EA90091301F /* Assets.xcassets */,
 				34B6E3BD23A13EA90091301F /* LaunchScreen.storyboard */,
 				34B6E3C023A13EA90091301F /* Info.plist */,
@@ -148,6 +151,7 @@
 				34B6E3C723A1402C0091301F /* Whatsinmyjunk.mlmodel in Sources */,
 				D80DC8A123A154F20099F0AB /* WhatYouAteViewController.swift in Sources */,
 				34B6E3B323A13EA70091301F /* AppDelegate.swift in Sources */,
+				34B6E3CB23A15A0D0091301F /* StatsViewController.swift in Sources */,
 				34B6E3B523A13EA70091301F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

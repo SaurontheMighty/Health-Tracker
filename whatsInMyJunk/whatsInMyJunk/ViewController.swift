@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     let model = Whatsinmyjunk();
-    var tempImage:UIImage
+    var tempImage:UIImage = UIImage(named:"logo")!
     @IBOutlet weak var foodThing: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,24 +29,24 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         tempImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         picker.dismiss(animated: true)
-        performSegue(withIdentifier: "cameraSegue", sender: self)
 
         guard let image = info[.editedImage] as? UIImage else {
             print("No image found")
             return
         }
         let WhatsinmyJunkOutput = try? model.prediction(image: buffer(from: tempImage)!)
-        foodThing.text = WhatsinmyJunkOutput!.classLabel
+//        foodThing.text = WhatsinmyJunkOutput!.classLabel
         // print out the image size as a test
         print(image.size)
+        performSegue(withIdentifier: "cameraSegue", sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "cameraSegue") {
-            let whatYouAteClass = segue.destination as! WhatYouAteViewController
-            whatYouAteClass.foodPic = tempImage
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if(segue.identifier == "cameraSegue") {
+//            let whatYouAteClass = segue.destination as! WhatYouAteViewController
+//            whatYouAteClass.foodPic = tempImage
+//        }
+//    }
     
     func buffer(from image: UIImage) -> CVPixelBuffer? {
       let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue, kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
