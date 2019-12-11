@@ -69,7 +69,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     @IBAction func Dismiss(_ sender: Any) {
-        self.presentingViewController?.dismiss(animated: false, completion:nil)
+        self.presentingViewController?.dismiss(animated: true, completion:nil)
     }
     
 }
