@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,14 +66,14 @@
             <objects>
                 <viewController title="Today's Stats" id="gQ4-ih-EIG" customClass="StatsViewController" customModule="whatsInMyJunk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dWO-qM-9PL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nKl-XX-sOS">
                                 <rect key="frame" x="67" y="127" width="240" height="128"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Today's Stata" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q5E-p2-lWd">
-                                <rect key="frame" x="137" y="9" width="101" height="30"/>
+                                <rect key="frame" x="137" y="53" width="101" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="Today's Stata"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KHQ-pb-hzB"/>
@@ -79,34 +82,34 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Calories:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="235-Ed-mMz">
-                                <rect key="frame" x="139" y="300" width="97" height="34"/>
+                                <rect key="frame" x="139" y="300" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sodium:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EyV-ro-h2H">
-                                <rect key="frame" x="139" y="468" width="97" height="34"/>
+                                <rect key="frame" x="139" y="460" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Carbohydrates:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="siD-31-Hsc">
-                                <rect key="frame" x="122.66666666666669" y="548" width="128" height="34"/>
+                                <rect key="frame" x="126" y="536" width="121" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Proteins:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3BW-89-cvj">
-                                <rect key="frame" x="137" y="632" width="99" height="34"/>
+                                <rect key="frame" x="137" y="616" width="99" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxH-zo-lqP">
-                                <rect key="frame" x="159.66666666666666" y="712" width="54" height="30"/>
+                                <rect key="frame" x="159.66666666666666" y="692" width="54" height="30"/>
                                 <state key="normal" title="Dismiss"/>
                                 <connections>
                                     <action selector="dismissPressed:" destination="gQ4-ih-EIG" eventType="touchUpInside" id="KrL-2D-IJK"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fat:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g15-cG-raS">
-                                <rect key="frame" x="139" y="384" width="97" height="34"/>
+                                <rect key="frame" x="139" y="380" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -149,19 +152,18 @@
             <objects>
                 <viewController id="y3g-gS-rYc" customClass="WhatYouAteViewController" customModule="whatsInMyJunk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ya0-tI-n2o">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sN-nY-qT8">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sN-nY-qT8">
                                 <rect key="frame" x="160" y="694" width="54" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Dismiss"/>
                                 <connections>
                                     <action selector="dismissPressed:" destination="y3g-gS-rYc" eventType="touchUpInside" id="3cT-Zm-fJJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What You Ate" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbg-uM-Cyz">
-                                <rect key="frame" x="16" y="307" width="160.33333333333334" height="26.333333333333314"/>
+                                <rect key="frame" x="16" y="351" width="160.33333333333334" height="26.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26.329999999999998" id="dZM-bz-yta"/>
                                 </constraints>
@@ -170,18 +172,57 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-Yz-gu7">
-                                <rect key="frame" x="0.0" y="20" width="375" height="269"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="269"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="Tcq-LI-U7l"/>
                                     <constraint firstAttribute="height" constant="269" id="iXd-La-VEG"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Calories:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-af-ivz">
+                                <rect key="frame" x="16" y="422" width="78" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sodium:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PHX-rO-Jvh">
+                                <rect key="frame" x="16" y="546" width="74" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Carbohydrates:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GHa-TA-hEc">
+                                <rect key="frame" x="166" y="545" width="121" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fat:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l1H-8y-E24">
+                                <rect key="frame" x="189" y="422" width="45" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Proteins:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QZH-dc-UKQ">
+                                <rect key="frame" x="16" y="640" width="79" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="GHa-TA-hEc" firstAttribute="leading" secondItem="PHX-rO-Jvh" secondAttribute="trailing" constant="76" id="0BB-RI-HRm"/>
                             <constraint firstItem="H5C-Yz-gu7" firstAttribute="top" secondItem="pf3-8V-TBR" secondAttribute="top" constant="20" id="0gi-E5-h6b"/>
+                            <constraint firstItem="GHa-TA-hEc" firstAttribute="top" secondItem="l1H-8y-E24" secondAttribute="bottom" constant="93" id="2Qy-h7-gXV"/>
+                            <constraint firstItem="l1H-8y-E24" firstAttribute="leading" secondItem="WWj-af-ivz" secondAttribute="trailing" constant="95" id="2qO-g1-3QV"/>
+                            <constraint firstItem="6sN-nY-qT8" firstAttribute="top" secondItem="GHa-TA-hEc" secondAttribute="bottom" constant="119" id="7w2-oF-JKW"/>
+                            <constraint firstItem="WWj-af-ivz" firstAttribute="top" secondItem="Cbg-uM-Cyz" secondAttribute="bottom" constant="44.670000000000002" id="9FH-Qr-bfe"/>
+                            <constraint firstItem="PHX-rO-Jvh" firstAttribute="leading" secondItem="pf3-8V-TBR" secondAttribute="leading" constant="16" id="CaZ-1d-Ut3"/>
+                            <constraint firstItem="pf3-8V-TBR" firstAttribute="trailing" secondItem="QZH-dc-UKQ" secondAttribute="trailing" constant="262" id="EYE-4b-Yuy"/>
+                            <constraint firstItem="PHX-rO-Jvh" firstAttribute="top" secondItem="WWj-af-ivz" secondAttribute="bottom" constant="94" id="MkW-6g-60O"/>
+                            <constraint firstItem="l1H-8y-E24" firstAttribute="top" secondItem="H5C-Yz-gu7" secondAttribute="bottom" constant="89" id="NcC-z6-Jv5"/>
+                            <constraint firstItem="pf3-8V-TBR" firstAttribute="trailing" secondItem="GHa-TA-hEc" secondAttribute="trailing" constant="88" id="Qff-u9-U3w"/>
                             <constraint firstItem="Cbg-uM-Cyz" firstAttribute="leading" secondItem="pf3-8V-TBR" secondAttribute="leading" constant="16" id="SQK-FB-1R9"/>
+                            <constraint firstItem="pf3-8V-TBR" firstAttribute="bottom" secondItem="QZH-dc-UKQ" secondAttribute="bottom" constant="113" id="Whp-GR-F7i"/>
+                            <constraint firstItem="QZH-dc-UKQ" firstAttribute="top" secondItem="PHX-rO-Jvh" secondAttribute="bottom" constant="59" id="eE6-vc-wmH"/>
+                            <constraint firstItem="WWj-af-ivz" firstAttribute="leading" secondItem="pf3-8V-TBR" secondAttribute="leading" constant="16" id="lTO-J3-U4W"/>
                             <constraint firstItem="Cbg-uM-Cyz" firstAttribute="top" secondItem="H5C-Yz-gu7" secondAttribute="bottom" constant="18" id="rvS-Bq-t4b"/>
+                            <constraint firstItem="pf3-8V-TBR" firstAttribute="trailing" secondItem="l1H-8y-E24" secondAttribute="trailing" constant="141" id="wRa-HE-lMo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pf3-8V-TBR"/>
                     </view>
