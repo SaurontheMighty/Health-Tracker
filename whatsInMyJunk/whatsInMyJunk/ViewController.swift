@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-
+    let model = Whatsinmyjunk();
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,6 +21,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         vc.allowsEditing = true
         vc.delegate = self
         present(vc, animated: true)
+        let WhatsinmyJunkOutput = try? model.prediction(image: <#T##CVPixelBuffer#>)
+        print(WhatsinmyJunkOutput!.classLabel)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true)
