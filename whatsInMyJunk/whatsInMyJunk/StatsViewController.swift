@@ -60,7 +60,7 @@ class StatsViewController: UIViewController {
             CarbsDaily.isHidden = true;
         }
         carbsTotalLabel.text = String(carbsTotal) + " g"
-        if(proteinsTotal > 50) {
+        if(proteinTotal > 50) {
             ProteinsDaily.isHidden = false;
         } else {
             ProteinsDaily.isHidden = true;
