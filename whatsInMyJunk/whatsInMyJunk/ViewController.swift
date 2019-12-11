@@ -68,5 +68,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         performSegue(withIdentifier: "statsSegue" ,sender: self)
     }
     
+    @IBAction func Dismiss(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: false, completion:nil)
+    }
+    
 }
 
