@@ -2,7 +2,7 @@
 //  WhatYouAteViewController.swift
 //  whatsInMyJunk
 //
-//  Created by Joseph on 11/12/19.
+//  Created by Ashish on 11/12/19.
 //  Copyright © 2019 Zain Lakhani. All rights reserved.
 //
 
