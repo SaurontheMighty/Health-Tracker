@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     let model = Whatsinmyjunk();
+    @IBOutlet weak var foodThing: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -33,7 +34,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             return
         }
         let WhatsinmyJunkOutput = try? model.prediction(image: buffer(from: tempImage)!)
-        print(WhatsinmyJunkOutput!.classLabel)
+        foodThing.text = WhatsinmyJunkOutput!.classLabel
         // print out the image size as a test
         print(image.size)
     }
